@@ -1,296 +1,223 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mundo Ney</title>
-
-  <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-
-  <!-- Bootstrap -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-
-  <!-- CSS -->
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-
-
-
-<!-- Header -->
 <body class="dark-mode">
 
 <div class="cursor"></div>
 
-<header class="navbar navbar-expand-lg header-custom">
+<!-- ===== HEADER ===== -->
+<header class="navbar navbar-expand-lg header-custom sticky-top">
   <div class="container">
-
-    <!-- Logo -->
-      <img src="assets/logo.png" alt="Logo" class="img-fluid" style="max-width: 150px;">
-
-    <!-- Botão mobile -->
+    <img src="assets/logo.png" alt="Logo" class="img-fluid" style="max-width:150px;">
     <button class="navbar-toggler text-white border-0" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
       <i class="bi bi-list fs-1"></i>
     </button>
-
-    <!-- Menu -->
     <div class="collapse navbar-collapse justify-content-end" id="menu">
-      <ul class="navbar-nav align-items-center gap-lg-5">
-
-        <li class="nav-item">
-          <a class="nav-link" href="#">Início</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="#">Biografia</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="#">Estatísticas</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="#">Vídeos</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="#">Galeria</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="#">Redes</a>
-        </li>
-
-        <!-- Botão tema -->
-        <li class="nav-item ms-lg-3">
-          <div class="theme-btn" id="themeToggle">
+      <ul class="navbar-nav align-items-center gap-lg-4">
+        <li class="nav-item"><a class="nav-link nav-font" href="#inicio">Início</a></li>
+        <li class="nav-item"><a class="nav-link nav-font" href="#biografia">Biografia</a></li>
+        <li class="nav-item"><a class="nav-link nav-font" href="#estatisticas">Estatísticas</a></li>
+        <li class="nav-item"><a class="nav-link nav-font" href="#videos">Vídeos</a></li>
+        <li class="nav-item"><a class="nav-link nav-font" href="#galeria">Galeria</a></li>
+        <li class="nav-item"><a class="nav-link nav-font" href="#redes">Redes</a></li>
+        <li class="nav-item ms-lg-2">
+          <button class="btn btn-outline-light rounded-circle p-0 d-flex align-items-center justify-content-center theme-btn" id="themeToggle" style="width:42px;height:42px;">
             <i class="bi bi-sun" id="themeIcon"></i>
-          </div>
+          </button>
         </li>
-
       </ul>
     </div>
-
   </div>
 </header>
 
-<!-- MAIN -->
-<main class="main-content d-flex align-items-center">
+<!-- ===== HERO ===== -->
+<section id="inicio" class="min-vh-100 d-flex align-items-center hero-bg py-5">
   <div class="container">
-
-    <!-- CARD -->
-    <div class="card-custom row align-items-center">
-
-      <!-- TEXTO -->
-      <div class="col-lg-6 text-section">
-        <h1 class="title">Neymar Jr</h1>
-        <p class="subtitle">
-          Jogador de Futebol • Influencer Digital • Ícone Global
-        </p>
-
-        <!-- REDES SOCIAIS -->
-        <div class="social-icons mt-4">
-          <i class="bi bi-instagram"></i>
-          <i class="bi bi-twitter-x"></i>
-          <i class="bi bi-youtube"></i>
-          <i class="bi bi-tiktok"></i>
+    <div class="card border-0 rounded-4 p-4 p-lg-5 card-custom">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-6">
+          <h1 class="display-1 fw-bold anton-font mb-2">Neymar Jr</h1>
+          <p class="fs-5 text-secondary">Jogador de Futebol • Influencer Digital • Ícone Global</p>
+          <div class="d-flex gap-3 mt-4 fs-3">
+            <i class="bi bi-instagram social-icon"></i>
+            <i class="bi bi-twitter-x social-icon"></i>
+            <i class="bi bi-youtube social-icon"></i>
+            <i class="bi bi-tiktok social-icon"></i>
+          </div>
+        </div>
+        <div class="col-lg-5 text-center">
+          <img src="assets/neymar.jpg" alt="Neymar" class="img-fluid rounded-4 main-img">
         </div>
       </div>
-
-      <!-- IMAGEM -->
-      <div class="col-lg-5 text-center">
-        <img src="assets/neymar.jpg" alt="Neymar" class="img-fluid main-img">
-      </div>
-
     </div>
   </div>
-</main>
+</section>
 
-    <!-- BIOGRAFIA -->
-<!-- BIOGRAFIA -->
-<section class="container-fluid py-5 container-bio">
-  <div class="container">
-
-    <!-- TÍTULO -->
-    <h2 class="title text-center mb-4">Biografia</h2>
-
-    <!-- TEXTO -->
+<!-- ===== BIOGRAFIA ===== -->
+<section id="biografia" class="py-5 bio-bg text-white">
+  <div class="container py-3">
+    <h2 class="anton-font display-4 text-center mb-4">Biografia</h2>
     <div class="row justify-content-center mb-5">
       <div class="col-12 col-md-8 text-center">
-        <p class="subtitle">
-          Neymar da Silva Santos Júnior nasceu em Mogi das Cruzes e, desde criança, mostrou talento no futebol. Ganhou destaque no Santos, onde virou ídolo.
-
-          Depois brilhou no Barcelona e no PSG, passando também pelo Al-Hilal e mantendo forte ligação com o Santos.
-
-          Fora de campo, inspira milhões com sua história de superação, talento e sucesso mundial.
+        <p class="fs-5 lh-lg opacity-90">
+          Neymar da Silva Santos Júnior nasceu em Mogi das Cruzes e, desde criança, mostrou talento no futebol.
+          Ganhou destaque no Santos, onde virou ídolo. Depois brilhou no Barcelona e no PSG, passando também pelo
+          Al-Hilal e mantendo forte ligação com o Santos. Fora de campo, inspira milhões com sua história de
+          superação, talento e sucesso mundial.
         </p>
       </div>
     </div>
-
-    <!-- IMAGENS -->
     <div class="row g-4 justify-content-center">
-
       <div class="col-12 col-md-5">
-        <div class="card border-0 shadow-lg bio-card">
-          <img src="assets/neymarnovo.jpg" class="bio-img" alt="Neymar no Santos">
+        <div class="card border-0 shadow-lg rounded-4 overflow-hidden h-100">
+          <img src="assets/neymarnovo.jpg" class="card-img-top object-fit-cover" style="height:320px;" alt="Neymar no Santos">
         </div>
       </div>
-
       <div class="col-12 col-md-5">
-        <div class="card border-0 shadow-lg bio-card">
-          <img src="assets/neymarauge.jpg" class="bio-img" alt="Neymar na Europa">
+        <div class="card border-0 shadow-lg rounded-4 overflow-hidden h-100">
+          <img src="assets/neymarauge.jpg" class="card-img-top object-fit-cover" style="height:320px;" alt="Neymar na Europa">
         </div>
       </div>
-
     </div>
-
   </div>
 </section>
 
-<!-- Estatísticas-->
-<section class="stats-section py-5">
-  <div class="container text-center">
-
-    <h2 class="stats-title mb-5">ESTATÍSTICAS</h2>
-
+<!-- ===== ESTATÍSTICAS ===== -->
+<section id="estatisticas" class="py-5 stats-bg text-white">
+  <div class="container py-3 text-center">
+    <h2 class="anton-font display-4 text-info mb-5 letter-spacing">ESTATÍSTICAS</h2>
     <div class="row g-4 justify-content-center">
 
-      <!-- CARD 1 -->
       <div class="col-12 col-sm-6 col-md-3">
-        <div class="stats-card p-4">
-          <div class="icon-circle bg-primary">
+        <div class="card border border-white border-opacity-10 bg-white bg-opacity-10 rounded-4 p-4 h-100 hover-lift">
+          <div class="rounded-circle bg-primary d-flex align-items-center justify-content-center mx-auto mb-3 fs-4 text-white" style="width:64px;height:64px;">
             <i class="bi bi-bullseye"></i>
           </div>
-          <h3>430+</h3>
-          <p>Gols na Carreira</p>
+          <h3 class="fw-bold display-6">430+</h3>
+          <p class="opacity-75 mb-0">Gols na Carreira</p>
         </div>
       </div>
 
-      <!-- CARD 2 -->
       <div class="col-12 col-sm-6 col-md-3">
-        <div class="stats-card p-4">
-          <div class="icon-circle bg-warning">
+        <div class="card border border-white border-opacity-10 bg-white bg-opacity-10 rounded-4 p-4 h-100 hover-lift">
+          <div class="rounded-circle bg-warning d-flex align-items-center justify-content-center mx-auto mb-3 fs-4 text-white" style="width:64px;height:64px;">
             <i class="bi bi-trophy"></i>
           </div>
-          <h3>30+</h3>
-          <p>Títulos Conquistados</p>
+          <h3 class="fw-bold display-6">30+</h3>
+          <p class="opacity-75 mb-0">Títulos Conquistados</p>
         </div>
       </div>
 
-      <!-- CARD 3 -->
       <div class="col-12 col-sm-6 col-md-3">
-        <div class="stats-card p-4">
-          <div class="icon-circle bg-success">
+        <div class="card border border-white border-opacity-10 bg-white bg-opacity-10 rounded-4 p-4 h-100 hover-lift">
+          <div class="rounded-circle bg-success d-flex align-items-center justify-content-center mx-auto mb-3 fs-4 text-white" style="width:64px;height:64px;">
             <i class="bi bi-award"></i>
           </div>
-          <h3>79+</h3>
-          <p>Gols pela Seleção</p>
+          <h3 class="fw-bold display-6">79+</h3>
+          <p class="opacity-75 mb-0">Gols pela Seleção</p>
         </div>
       </div>
 
-      <!-- CARD 4 -->
       <div class="col-12 col-sm-6 col-md-3">
-        <div class="stats-card p-4">
-          <div class="icon-circle gradient-icon">
+        <div class="card border border-white border-opacity-10 bg-white bg-opacity-10 rounded-4 p-4 h-100 hover-lift">
+          <div class="rounded-circle gradient-icon d-flex align-items-center justify-content-center mx-auto mb-3 fs-4 text-white" style="width:64px;height:64px;">
             <i class="bi bi-graph-up"></i>
           </div>
-          <h3>200M+</h3>
-          <p>Seguidores Globais</p>
+          <h3 class="fw-bold display-6">200M+</h3>
+          <p class="opacity-75 mb-0">Seguidores Globais</p>
         </div>
       </div>
 
     </div>
-
   </div>
 </section>
-<!-- LINHA DO TEMPO -->
- <section class="timeline-section py-5 bg-dark text-light">
-  <div class="container">
 
-    <h2 class="text-center mb-5 fw-bold">Principais Conquistas</h2>
-
-    <div class="timeline position-relative">
-
-      <!-- LINHA CENTRAL -->
+<!-- ===== LINHA DO TEMPO ===== -->
+<section id="conquistas" class="py-5 timeline-bg text-white">
+  <div class="container py-3">
+    <h2 class="text-center fw-bold display-5 mb-5">Principais Conquistas</h2>
+    <div class="timeline position-relative mx-auto" style="max-width:860px;">
       <div class="timeline-line position-absolute top-0 start-50 translate-middle-x h-100"></div>
 
       <!-- ITEM 1 -->
-      <div class="row align-items-center mb-5">
-        <div class="col-md-6 text-md-end">
-          <div class="card timeline-card p-4 border-0 shadow">
-            <div class="icon mb-2">🏆</div>
-            <span class="text-success fw-bold">2011</span>
-            <h5 class="fw-semibold">Prêmio Puskás</h5>
-            <p class="mb-0">Gol mais bonito do ano</p>
+      <div class="row align-items-center mb-4">
+        <div class="col-md-6 text-md-end pe-md-5">
+          <div class="card bg-dark text-white border-0 shadow rounded-4 p-4 hover-lift">
+            <span class="fs-3">🏆</span>
+            <span class="text-success fw-bold small">2011</span>
+            <h5 class="fw-semibold mt-1">Prêmio Puskás</h5>
+            <p class="mb-0 text-secondary small">Gol mais bonito do ano</p>
           </div>
         </div>
       </div>
 
       <!-- ITEM 2 -->
-      <div class="row align-items-center mb-5 flex-md-row-reverse">
-        <div class="col-md-6">
-          <div class="card timeline-card p-4 border-0 shadow">
-            <div class="icon mb-2">⭐</div>
-            <span class="text-success fw-bold">2011</span>
-            <h5 class="fw-semibold">Jogador Sul-Americano</h5>
-            <p class="mb-0">Primeiro de três títulos</p>
+      <div class="row align-items-center mb-4 flex-md-row-reverse">
+        <div class="col-md-6 ps-md-5">
+          <div class="card bg-dark text-white border-0 shadow rounded-4 p-4 hover-lift">
+            <span class="fs-3">⭐</span>
+            <span class="text-success fw-bold small">2011</span>
+            <h5 class="fw-semibold mt-1">Jogador Sul-Americano</h5>
+            <p class="mb-0 text-secondary small">Primeiro de três títulos</p>
           </div>
         </div>
       </div>
 
       <!-- ITEM 3 -->
-      <div class="row align-items-center mb-5">
-        <div class="col-md-6 text-md-end">
-          <div class="card timeline-card p-4 border-0 shadow">
-            <div class="icon mb-2">⚽</div>
-            <span class="text-success fw-bold">2015</span>
-            <h5 class="fw-semibold">Champions League</h5>
-            <p class="mb-0">Com o FC Barcelona</p>
+      <div class="row align-items-center mb-4">
+        <div class="col-md-6 text-md-end pe-md-5">
+          <div class="card bg-dark text-white border-0 shadow rounded-4 p-4 hover-lift">
+            <span class="fs-3">⚽</span>
+            <span class="text-success fw-bold small">2015</span>
+            <h5 class="fw-semibold mt-1">Champions League</h5>
+            <p class="mb-0 text-secondary small">Com o FC Barcelona</p>
           </div>
         </div>
       </div>
 
       <!-- ITEM 4 -->
-      <div class="row align-items-center mb-5 flex-md-row-reverse">
-        <div class="col-md-6">
-          <div class="card timeline-card p-4 border-0 shadow">
-            <div class="icon mb-2">🥇</div>
-            <span class="text-success fw-bold">2016</span>
-            <h5 class="fw-semibold">Ouro Olímpico</h5>
-            <p class="mb-0">Capitão no Rio</p>
+      <div class="row align-items-center mb-4 flex-md-row-reverse">
+        <div class="col-md-6 ps-md-5">
+          <div class="card bg-dark text-white border-0 shadow rounded-4 p-4 hover-lift">
+            <span class="fs-3">🥇</span>
+            <span class="text-success fw-bold small">2016</span>
+            <h5 class="fw-semibold mt-1">Ouro Olímpico</h5>
+            <p class="mb-0 text-secondary small">Capitão no Rio</p>
           </div>
         </div>
       </div>
 
       <!-- ITEM 5 -->
-      <div class="row align-items-center mb-5">
-        <div class="col-md-6 text-md-end">
-          <div class="card timeline-card p-4 border-0 shadow">
-            <div class="icon mb-2">💰</div>
-            <span class="text-success fw-bold">2017</span>
-            <h5 class="fw-semibold">Transferência Recorde</h5>
-            <p class="mb-0">222 milhões de euros</p>
+      <div class="row align-items-center mb-4">
+        <div class="col-md-6 text-md-end pe-md-5">
+          <div class="card bg-dark text-white border-0 shadow rounded-4 p-4 hover-lift">
+            <span class="fs-3">💰</span>
+            <span class="text-success fw-bold small">2017</span>
+            <h5 class="fw-semibold mt-1">Transferência Recorde</h5>
+            <p class="mb-0 text-secondary small">222 milhões de euros</p>
           </div>
         </div>
       </div>
 
       <!-- ITEM 6 -->
-      <div class="row align-items-center mb-5 flex-md-row-reverse">
-        <div class="col-md-6">
-          <div class="card timeline-card p-4 border-0 shadow">
-            <div class="icon mb-2">🐐</div>
-            <span class="text-success fw-bold">2023</span>
-            <h5 class="fw-semibold">Maior Artilheiro</h5>
-            <p class="mb-0">Supera Pelé</p>
+      <div class="row align-items-center mb-4 flex-md-row-reverse">
+        <div class="col-md-6 ps-md-5">
+          <div class="card bg-dark text-white border-0 shadow rounded-4 p-4 hover-lift">
+            <span class="fs-3">🐐</span>
+            <span class="text-success fw-bold small">2023</span>
+            <h5 class="fw-semibold mt-1">Maior Artilheiro</h5>
+            <p class="mb-0 text-secondary small">Supera Pelé</p>
           </div>
         </div>
       </div>
@@ -299,190 +226,125 @@
   </div>
 </section>
 
-  <!-- Vídeos -->
-<section class="videos-section py-5">
-  <div class="container">
+<!-- ===== VÍDEOS ===== -->
+<section id="videos" class="py-5 body-bg">
+  <div class="container py-3">
+    <h2 class="text-center fw-bold display-5 mb-1">VEJA NEYMAR EM AÇÃO</h2>
+    <h4 class="text-center fw-semibold text-secondary mb-4">Os momentos que encantaram o planeta</h4>
 
-    <h2 class="text-center mb-2 fw-bold">VEJA NEYMAR EM AÇÃO</h2>
-    <h4 class="text-center mb-4 fw-bold">Os momentos que encantaram o planeta</h4>
-
-    <!-- VÍDEO PRINCIPAL -->
-    <div class="mb-2 d-flex justify-content-center">
-  <div class="ratio ratio-16x9 w-75">
-    <iframe src="https://www.youtube.com/embed/OWOjRdmpM6I"
-            title="YouTube video"
-            allowfullscreen>
-    </iframe>
-  </div>
-</div>
-
-    <!-- CARDS -->
-    <div class="row g-4 justify-content-center mt-5">
-
-  <!-- CARD 1 -->
-  <div class="col-12 col-md-4">
-    <div class="card bg-dark text-white border-0 shadow h-100 d-flex">
-      <img src="https://i.pinimg.com/736x/d1/d3/e7/d1d3e7928456282af87bde07c08fed24.jpg"
-           class="card-img-top"
-           style="height: 250px; object-fit: cover;">
-      <div class="card-body text-center d-flex flex-column">
-        <h5 class="card-title">Melhores Gols</h5>
-        <a href="https://www.youtube.com/watch?v=P_ihwXty6Ls"
-           target="_blank"
-           class="btn btn-success mt-auto">
-          Assistir
-        </a>
+    <div class="d-flex justify-content-center mb-5">
+      <div class="ratio ratio-16x9 w-75">
+        <iframe src="https://www.youtube.com/embed/OWOjRdmpM6I" title="Neymar em ação" allowfullscreen class="rounded-4"></iframe>
       </div>
     </div>
-  </div>
 
-  <!-- CARD 2 -->
-  <div class="col-12 col-md-4">
-    <div class="card bg-dark text-white border-0 shadow h-100 d-flex">
-      <img src="https://i.pinimg.com/736x/84/ca/a8/84caa8883a6ec3296390e4ac9f9042bb.jpg"
-           class="card-img-top"
-           style="height: 250px; object-fit: cover;">
-      <div class="card-body text-center d-flex flex-column">
-        <h5 class="card-title">Seleção Brasileira</h5>
-        <a href="https://www.youtube.com/watch?v=DsL31czd61A"
-           target="_blank"
-           class="btn btn-success mt-auto">
-          Assistir
-        </a>
+    <div class="row g-4 justify-content-center">
+
+      <div class="col-12 col-md-4">
+        <div class="card bg-dark text-white border-0 shadow-lg rounded-4 overflow-hidden h-100">
+          <img src="https://i.pinimg.com/736x/d1/d3/e7/d1d3e7928456282af87bde07c08fed24.jpg" class="card-img-top object-fit-cover" style="height:220px;" alt="Melhores Gols">
+          <div class="card-body d-flex flex-column text-center">
+            <h5 class="card-title">Melhores Gols</h5>
+            <a href="https://www.youtube.com/watch?v=P_ihwXty6Ls" target="_blank" class="btn btn-success mt-auto rounded-3">Assistir</a>
+          </div>
+        </div>
       </div>
+
+      <div class="col-12 col-md-4">
+        <div class="card bg-dark text-white border-0 shadow-lg rounded-4 overflow-hidden h-100">
+          <img src="https://i.pinimg.com/736x/84/ca/a8/84caa8883a6ec3296390e4ac9f9042bb.jpg" class="card-img-top object-fit-cover" style="height:220px;" alt="Seleção Brasileira">
+          <div class="card-body d-flex flex-column text-center">
+            <h5 class="card-title">Seleção Brasileira</h5>
+            <a href="https://www.youtube.com/watch?v=DsL31czd61A" target="_blank" class="btn btn-success mt-auto rounded-3">Assistir</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-4">
+        <div class="card bg-dark text-white border-0 shadow-lg rounded-4 overflow-hidden h-100">
+          <img src="https://i.pinimg.com/1200x/91/e3/8f/91e38f34a6d948ee64d175e4fb254f6a.jpg" class="card-img-top object-fit-cover" style="height:220px;" alt="Infância">
+          <div class="card-body d-flex flex-column text-center">
+            <h5 class="card-title">Infância</h5>
+            <a href="https://www.youtube.com/watch?v=EYOpx5IGVrE" target="_blank" class="btn btn-success mt-auto rounded-3">Assistir</a>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
-
-  <!-- CARD 3 -->
-  <div class="col-12 col-md-4">
-    <div class="card bg-dark text-white border-0 shadow h-100 d-flex">
-      <img src="https://i.pinimg.com/1200x/91/e3/8f/91e38f34a6d948ee64d175e4fb254f6a.jpg"
-           class="card-img-top"
-           style="height: 250px; object-fit: cover;">
-      <div class="card-body text-center d-flex flex-column">
-        <h5 class="card-title">Infância</h5>
-        <a href="https://www.youtube.com/watch?v=EYOpx5IGVrE"
-           target="_blank"
-           class="btn btn-success mt-auto">
-          Assistir
-        </a>
-      </div>
-    </div>
-  </div>
-
-</div>
 </section>
 
-<!-- Galeria -->
-<!-- GALERIA -->
-<section class="galeria-section py-5">
-  <div class="container">
+<!-- ===== GALERIA ===== -->
+<section id="galeria" class="py-5 body-bg">
+  <div class="container py-3">
+    <h2 class="text-center fw-bold display-5 mb-5">GALERIA DE FOTOS</h2>
 
-    <h2 class="text-center mb-5 fw-bold">GALERIA DE FOTOS</h2>
-
-    <!-- CARROSSEL -->
     <div id="carouselNeymar" class="carousel slide" data-bs-ride="carousel">
-
       <div class="carousel-inner">
 
-        <!-- SANTOS -->
         <div class="carousel-item active text-center">
-          <button class="border-0 bg-transparent"
-                  data-bs-toggle="modal"
-                  data-bs-target="#modalSantos">
-            <img src="assets/download (1).jpg"
-                 class="img-fluid rounded"
-                 style="max-width: 700px;">
+          <button class="border-0 bg-transparent" data-bs-toggle="modal" data-bs-target="#modalSantos">
+            <img src="assets/download (1).jpg" class="img-fluid rounded-4 carousel-img" alt="Santos">
           </button>
           <h4 class="mt-3">Santos</h4>
         </div>
 
-        <!-- BARCELONA -->
         <div class="carousel-item text-center">
-          <button class="border-0 bg-transparent"
-                  data-bs-toggle="modal"
-                  data-bs-target="#modalBarcelona">
-            <img src="../assets/barca.jpg"
-                 class="img-fluid rounded"
-                 style="max-width: 700px;">
+          <button class="border-0 bg-transparent" data-bs-toggle="modal" data-bs-target="#modalBarcelona">
+            <img src="assets/barca.jpg" class="img-fluid rounded-4 carousel-img" alt="Barcelona">
           </button>
           <h4 class="mt-3">Barcelona</h4>
         </div>
 
-        <!-- PSG -->
         <div class="carousel-item text-center">
-          <button class="border-0 bg-transparent"
-                  data-bs-toggle="modal"
-                  data-bs-target="#modalPSG">
-            <img src="assets/Neymar se recupera de su lesión y podría volver antes de lo esperado - TyC Sports.jpg"
-                 class="img-fluid rounded"
-                 style="max-width: 700px;">
+          <button class="border-0 bg-transparent" data-bs-toggle="modal" data-bs-target="#modalPSG">
+            <img src="assets/Neymar se recupera de su lesión y podría volver antes de lo esperado - TyC Sports.jpg" class="img-fluid rounded-4 carousel-img" alt="PSG">
           </button>
           <h4 class="mt-3">PSG</h4>
         </div>
 
-        <!-- AL HILAL -->
         <div class="carousel-item text-center">
-          <button class="border-0 bg-transparent"
-                  data-bs-toggle="modal"
-                  data-bs-target="#modalHilal">
-            <img src="assets/Neymar Jr 😛🙌🏼.jpg"
-                 class="img-fluid rounded"
-                 style="max-width: 700px;">
+          <button class="border-0 bg-transparent" data-bs-toggle="modal" data-bs-target="#modalHilal">
+            <img src="assets/Neymar Jr 😛🙌🏼.jpg" class="img-fluid rounded-4 carousel-img" alt="Al Hilal">
           </button>
           <h4 class="mt-3">Al Hilal</h4>
         </div>
 
-        <!-- BRASIL -->
         <div class="carousel-item text-center">
-          <button class="border-0 bg-transparent"
-                  data-bs-toggle="modal"
-                  data-bs-target="#modalBrasil">
-            <img src="assets/br.jpg"
-                 class="img-fluid rounded"
-                 style="max-width: 700px;">
+          <button class="border-0 bg-transparent" data-bs-toggle="modal" data-bs-target="#modalBrasil">
+            <img src="assets/br.jpg" class="img-fluid rounded-4 carousel-img" alt="Brasil">
           </button>
           <h4 class="mt-3">Brasil</h4>
         </div>
 
       </div>
-
-      <!-- CONTROLES -->
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselNeymar" data-bs-slide="prev">
         <span class="carousel-control-prev-icon"></span>
       </button>
-
       <button class="carousel-control-next" type="button" data-bs-target="#carouselNeymar" data-bs-slide="next">
         <span class="carousel-control-next-icon"></span>
       </button>
-
     </div>
-
   </div>
 </section>
 
-<!-- ================= MODAIS ================= -->
-
+<!-- ===== MODAIS GALERIA ===== -->
 <!-- SANTOS -->
 <div class="modal fade" id="modalSantos" tabindex="-1">
-  <div class="modal-dialog modal-xl">
-    <div class="modal-content bg-dark text-white">
-      <div class="modal-header">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content bg-dark text-white border-0 rounded-4">
+      <div class="modal-header border-secondary">
         <h5 class="modal-title">Santos</h5>
         <button class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
       </div>
       <div class="modal-body">
         <div class="row g-3">
-          <div class="col-md-4"><img src="assets/santos1.jpg" class="img-fluid rounded modal-img"></div>
-          <div class="col-md-2"><img src="assets/santos2.jpg" class="img-fluid rounded modal-img"></div>
-          <div class="col-md-4"><img src="assets/santos3.jpg" class="img-fluid rounded modal-img"></div>
-          <div class="col-md-2"><img src="assets/santos7.jpg" class="img-fluid rounded modal-img"></div>
-          <div class="col-md-4"><img src="assets/santos4.jpg" class="img-fluid rounded modal-img"></div>
-          <div class="col-md-4"><img src="assets/santos5.jpg" class="img-fluid rounded modal-img"></div>
-          <div class="col-md-4"><img src="assets/santos6.jpg" class="img-fluid rounded modal-img"></div>
-          <div class="col-md-4"><img src="assets/santos8.jpg" class="img-fluid rounded modal-img"></div>
-          <div class="col-md-4"><img src="assets/santos9.jpg" class="img-fluid rounded modal-img"></div>
-          <div class="col-md-4"><img src="assets/santos11.jpg" class="img-fluid rounded modal-img"></div>
+          <div class="col-md-4"><img src="assets/santos1.jpg" class="img-fluid rounded-3 w-100 object-fit-cover" style="height:200px;" alt="Santos 1"></div>
+          <div class="col-md-4"><img src="assets/santos2.jpg" class="img-fluid rounded-3 w-100 object-fit-cover" style="height:200px;" alt="Santos 2"></div>
+          <div class="col-md-4"><img src="assets/santos3.jpg" class="img-fluid rounded-3 w-100 object-fit-cover" style="height:200px;" alt="Santos 3"></div>
+          <div class="col-md-4"><img src="assets/santos4.jpg" class="img-fluid rounded-3 w-100 object-fit-cover" style="height:200px;" alt="Santos 4"></div>
+          <div class="col-md-4"><img src="assets/santos5.jpg" class="img-fluid rounded-3 w-100 object-fit-cover" style="height:200px;" alt="Santos 5"></div>
+          <div class="col-md-4"><img src="assets/santos6.jpg" class="img-fluid rounded-3 w-100 object-fit-cover" style="height:200px;" alt="Santos 6"></div>
         </div>
       </div>
     </div>
@@ -491,23 +353,20 @@
 
 <!-- BARCELONA -->
 <div class="modal fade" id="modalBarcelona" tabindex="-1">
-  <div class="modal-dialog modal-xl">
-    <div class="modal-content bg-dark text-white">
-      <div class="modal-header">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content bg-dark text-white border-0 rounded-4">
+      <div class="modal-header border-secondary">
         <h5 class="modal-title">Barcelona</h5>
         <button class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
       </div>
       <div class="modal-body">
         <div class="row g-3">
-          <div class="col-md-4"><img src="assets/barca3.jpg" class="img-fluid rounded modal-img"></div>
-          <div class="col-md-4"><img src="assets/barca2.jpg" class="img-fluid rounded modal-img"></div>
-          <div class="col-md-4"><img src="assets/barca1.jpg" class="img-fluid rounded modal-img"></div>
-          <div class="col-md-4"><img src="assets/barca4.jpg" class="img-fluid rounded modal-img"></div>
-          <div class="col-md-4"><img src="assets/barca5.jpg" class="img-fluid rounded modal-img"></div>
-          <div class="col-md-4"><img src="assets/barca6.jpg" class="img-fluid rounded modal-img"></div>
-          <div class="col-md-4"><img src="assets/barca7.jpg" class="img-fluid rounded modal-img"></div>
-          <div class="col-md-4"><img src="assets/barca8.jpg" class="img-fluid rounded modal-img"></div>
-          <div class="col-md-4"><img src="assets/barca9.jpg" class="img-fluid rounded modal-img"></div>
+          <div class="col-md-4"><img src="assets/barca1.jpg" class="img-fluid rounded-3 w-100 object-fit-cover" style="height:200px;" alt="Barca 1"></div>
+          <div class="col-md-4"><img src="assets/barca2.jpg" class="img-fluid rounded-3 w-100 object-fit-cover" style="height:200px;" alt="Barca 2"></div>
+          <div class="col-md-4"><img src="assets/barca3.jpg" class="img-fluid rounded-3 w-100 object-fit-cover" style="height:200px;" alt="Barca 3"></div>
+          <div class="col-md-4"><img src="assets/barca4.jpg" class="img-fluid rounded-3 w-100 object-fit-cover" style="height:200px;" alt="Barca 4"></div>
+          <div class="col-md-4"><img src="assets/barca5.jpg" class="img-fluid rounded-3 w-100 object-fit-cover" style="height:200px;" alt="Barca 5"></div>
+          <div class="col-md-4"><img src="assets/barca6.jpg" class="img-fluid rounded-3 w-100 object-fit-cover" style="height:200px;" alt="Barca 6"></div>
         </div>
       </div>
     </div>
@@ -516,23 +375,20 @@
 
 <!-- PSG -->
 <div class="modal fade" id="modalPSG" tabindex="-1">
-  <div class="modal-dialog modal-xl">
-    <div class="modal-content bg-dark text-white">
-      <div class="modal-header">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content bg-dark text-white border-0 rounded-4">
+      <div class="modal-header border-secondary">
         <h5 class="modal-title">PSG</h5>
         <button class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
       </div>
       <div class="modal-body">
         <div class="row g-3">
-          <div class="col-md-4"><img src="assets/psg1.jpg" class="img-fluid rounded modal-img"></div>
-          <div class="col-md-4"><img src="assets/psg2.jpg" class="img-fluid rounded modal-img"></div>
-          <div class="col-md-4"><img src="assets/psg3.jpg" class="img-fluid rounded modal-img"></div>
-          <div class="col-md-2"><img src="assets/psg4.jpg" class="img-fluid rounded modal-img"></div>
-          <div class="col-md-4"><img src="assets/psg5.jpg" class="img-fluid rounded modal-img"></div>
-          <div class="col-md-4"><img src="assets/psg6.jpg" class="img-fluid rounded modal-img"></div>
-          <div class="col-md-4"><img src="assets/psg7.jpg" class="img-fluid rounded modal-img"></div>
-          <div class="col-md-4"><img src="assets/psg8.jpg" class="img-fluid rounded modal-img"></div>
-          <div class="col-md-4"><img src="assets/psg9.jpg" class="img-fluid rounded modal-img"></div>
+          <div class="col-md-4"><img src="assets/psg1.jpg" class="img-fluid rounded-3 w-100 object-fit-cover" style="height:200px;" alt="PSG 1"></div>
+          <div class="col-md-4"><img src="assets/psg2.jpg" class="img-fluid rounded-3 w-100 object-fit-cover" style="height:200px;" alt="PSG 2"></div>
+          <div class="col-md-4"><img src="assets/psg3.jpg" class="img-fluid rounded-3 w-100 object-fit-cover" style="height:200px;" alt="PSG 3"></div>
+          <div class="col-md-4"><img src="assets/psg4.jpg" class="img-fluid rounded-3 w-100 object-fit-cover" style="height:200px;" alt="PSG 4"></div>
+          <div class="col-md-4"><img src="assets/psg5.jpg" class="img-fluid rounded-3 w-100 object-fit-cover" style="height:200px;" alt="PSG 5"></div>
+          <div class="col-md-4"><img src="assets/psg6.jpg" class="img-fluid rounded-3 w-100 object-fit-cover" style="height:200px;" alt="PSG 6"></div>
         </div>
       </div>
     </div>
@@ -541,270 +397,249 @@
 
 <!-- AL HILAL -->
 <div class="modal fade" id="modalHilal" tabindex="-1">
-  <div class="modal-dialog modal-xl">
-    <div class="modal-content bg-dark text-white">
-      <div class="modal-header">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content bg-dark text-white border-0 rounded-4">
+      <div class="modal-header border-secondary">
         <h5 class="modal-title">Al Hilal</h5>
         <button class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
       </div>
       <div class="modal-body">
         <div class="row g-3">
-          <div class="col-md-4"><img src="assets/al1.jpg" class="img-fluid rounded modal-img"></div>
-          <div class="col-md-4"><img src="assets/al2.jpg" class="img-fluid rounded modal-img"></div>
-          <div class="col-md-4"><img src="assets/al3.jpg" class="img-fluid rounded modal-img"></div>
-          <div class="col-md-4"><img src="assets/al4.jpg" class="img-fluid rounded modal-img"></div>
-          <div class="col-md-4"><img src="assets/al5.jpg" class="img-fluid rounded modal-img"></div>
-          <div class="col-md-4"><img src="assets/al6.jpg" class="img-fluid rounded modal-img"></div>
-          <div class="col-md-4"><img src="assets/al7.jpg" class="img-fluid rounded modal-img"></div>
-          <div class="col-md-4"><img src="assets/al8.jpg" class="img-fluid rounded modal-img"></div>
-          <div class="col-md-4"><img src="assets/al9.jpg" class="img-fluid rounded modal-img"></div>
+          <div class="col-md-4"><img src="assets/al1.jpg" class="img-fluid rounded-3 w-100 object-fit-cover" style="height:200px;" alt="Al Hilal 1"></div>
+          <div class="col-md-4"><img src="assets/al2.jpg" class="img-fluid rounded-3 w-100 object-fit-cover" style="height:200px;" alt="Al Hilal 2"></div>
+          <div class="col-md-4"><img src="assets/al3.jpg" class="img-fluid rounded-3 w-100 object-fit-cover" style="height:200px;" alt="Al Hilal 3"></div>
+          <div class="col-md-4"><img src="assets/al4.jpg" class="img-fluid rounded-3 w-100 object-fit-cover" style="height:200px;" alt="Al Hilal 4"></div>
+          <div class="col-md-4"><img src="assets/al5.jpg" class="img-fluid rounded-3 w-100 object-fit-cover" style="height:200px;" alt="Al Hilal 5"></div>
+          <div class="col-md-4"><img src="assets/al6.jpg" class="img-fluid rounded-3 w-100 object-fit-cover" style="height:200px;" alt="Al Hilal 6"></div>
         </div>
       </div>
     </div>
   </div>
 </div>
 
-<!-- Brasil -->
+<!-- BRASIL -->
 <div class="modal fade" id="modalBrasil" tabindex="-1">
-  <div class="modal-dialog modal-xl">
-    <div class="modal-content bg-dark text-white">
-      <div class="modal-header">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content bg-dark text-white border-0 rounded-4">
+      <div class="modal-header border-secondary">
         <h5 class="modal-title">Brasil</h5>
         <button class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
       </div>
       <div class="modal-body">
         <div class="row g-3">
-          <div class="col-md-4"><img src="assets/br1.jpg" class="img-fluid rounded modal-img"></div>
-          <div class="col-md-4"><img src="assets/br2.jpg" class="img-fluid rounded modal-img"></div>
-          <div class="col-md-4"><img src="assets/br3.jpg" class="img-fluid rounded modal-img"></div>
-          <div class="col-md-2"><img src="assets/br4.jpg" class="img-fluid rounded modal-img"></div>
-          <div class="col-md-4"><img src="assets/br5.jpg" class="img-fluid rounded modal-img"></div>
-          <div class="col-md-4"><img src="assets/br6.jpg" class="img-fluid rounded modal-img"></div>
-          <div class="col-md-4"><img src="assets/br7.jpg" class="img-fluid rounded modal-img"></div>
-          <div class="col-md-4"><img src="assets/br8.jpg" class="img-fluid rounded modal-img"></div>
-          <div class="col-md-4"><img src="assets/br9.jpg" class="img-fluid rounded modal-img"></div>
+          <div class="col-md-4"><img src="assets/br1.jpg" class="img-fluid rounded-3 w-100 object-fit-cover" style="height:200px;" alt="Brasil 1"></div>
+          <div class="col-md-4"><img src="assets/br2.jpg" class="img-fluid rounded-3 w-100 object-fit-cover" style="height:200px;" alt="Brasil 2"></div>
+          <div class="col-md-4"><img src="assets/br3.jpg" class="img-fluid rounded-3 w-100 object-fit-cover" style="height:200px;" alt="Brasil 3"></div>
+          <div class="col-md-4"><img src="assets/br4.jpg" class="img-fluid rounded-3 w-100 object-fit-cover" style="height:200px;" alt="Brasil 4"></div>
+          <div class="col-md-4"><img src="assets/br5.jpg" class="img-fluid rounded-3 w-100 object-fit-cover" style="height:200px;" alt="Brasil 5"></div>
+          <div class="col-md-4"><img src="assets/br6.jpg" class="img-fluid rounded-3 w-100 object-fit-cover" style="height:200px;" alt="Brasil 6"></div>
         </div>
       </div>
     </div>
   </div>
 </div>
 
-<!-- Redes Sociais -->
- <div class="container py-5 text-center">
-    <h3 class="title mb-5">REDES SOCIAIS</h3>
+<!-- ===== REDES SOCIAIS ===== -->
+<section id="redes" class="py-5 body-bg">
+  <div class="container py-3">
+    <h2 class="anton-font display-4 text-center mb-5">REDES SOCIAIS</h2>
 
+    <!-- Cards de imagem -->
+    <div class="row g-4 mb-5">
+      <div class="col-md-6">
+        <div class="card border-0 rounded-4 overflow-hidden">
+          <img src="assets/equipe.jpg" class="card-img" style="height:300px;object-fit:cover;" alt="Equipe">
+          <div class="card-img-overlay d-flex align-items-end p-4" style="background:linear-gradient(to top,rgba(0,0,0,.7),transparent);">
+            <p class="card-text text-white fs-4 lh-sm mb-0">Alma da Equipe<br><small class="text-white-50">Celebrando juntos</small></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card border-0 rounded-4 overflow-hidden">
+          <img src="assets/fa.jpg" class="card-img" style="height:300px;object-fit:cover;" alt="Fãs">
+          <div class="card-img-overlay d-flex align-items-end p-4" style="background:linear-gradient(to top,rgba(0,0,0,.7),transparent);">
+            <p class="card-text text-white fs-4 lh-sm mb-0">Conexão com Fãs<br><small class="text-white-50">Inspirando milhões</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cards de redes -->
     <div class="row g-4">
 
-      <!-- CARD 1 -->
-      <div class="col-md-6">
-        <div class="card custom-card text-white">
-          <img src="assets/equipe.jpg" class="card-img" alt="Equipe">
-          <div class="card-img-overlay">
-            <p class="card-text">
-            Alma da Equipe <br>
-            Celebrando juntos
-            </p>
-          </div>
+      <div class="col-md-4">
+        <div class="card rounded-4 p-4 h-100 social-card-item hover-lift">
+          <i class="bi bi-instagram fs-2 mb-2 text-danger"></i>
+          <h5 class="fw-bold text-primary">Instagram</h5>
+          <p class="text-secondary mb-2">@neymarjr</p>
+          <h3 class="fw-bold text-warning">225M+</h3>
+          <p class="text-secondary mb-0 fs-5">Seguidores</p>
         </div>
       </div>
 
-      <!-- CARD 2 -->
-      <div class="col-md-6">
-        <div class="card custom-card text-white">
-          <img src="assets/fa.jpg" class="card-img" alt="Fãs">
-          <div class="card-img-overlay">
-            <p class="card-text">
-              Conexão com Fãs <br>
-              Inspirando milhões
-            </p>
-          </div>
+      <div class="col-md-4">
+        <div class="card rounded-4 p-4 h-100 social-card-item hover-lift">
+          <i class="bi bi-twitter-x fs-2 mb-2"></i>
+          <h5 class="fw-bold text-primary">X / Twitter</h5>
+          <p class="text-secondary mb-2">@neymarjr</p>
+          <h3 class="fw-bold text-warning">63M+</h3>
+          <p class="text-secondary mb-0 fs-5">Seguidores</p>
         </div>
       </div>
 
-    <!-- CARDS REDES -->
-     <section class="container py-5">
-  <div class="row g-4">
-
-    <!-- Instagram -->
-    <div class="col-md-4">
-      <div class="social-card">
-        <i class="bi bi-instagram icon"></i>
-        <h4 class="platform">Instagram</h4>
-        <p class="user">@neymarjr</p>
-        <h3 class="numbers">225M+</h3>
-        <p class="label">Seguidores</p>
+      <div class="col-md-4">
+        <div class="card rounded-4 p-4 h-100 social-card-item hover-lift">
+          <i class="bi bi-youtube fs-2 mb-2 text-danger"></i>
+          <h5 class="fw-bold text-primary">Youtube</h5>
+          <p class="text-secondary mb-2">Neymar Jr</p>
+          <h3 class="fw-bold text-warning">5M+</h3>
+          <p class="text-secondary mb-0 fs-5">Inscritos</p>
+        </div>
       </div>
-    </div>
 
-    <!-- Twitter -->
-    <div class="col-md-4">
-      <div class="social-card">
-        <i class="bi bi-chat-dots icon"></i>  
-        <h4 class="platform">X / Twitter</h4>
-        <p class="user">@neymarjr</p>
-        <h3 class="numbers">63M+</h3>
-        <p class="label">Seguidores</p>
+      <div class="col-md-4">
+        <div class="card rounded-4 p-4 h-100 social-card-item hover-lift">
+          <i class="bi bi-facebook fs-2 mb-2 text-primary"></i>
+          <h5 class="fw-bold text-primary">Facebook</h5>
+          <p class="text-secondary mb-2">Neymar Jr</p>
+          <h3 class="fw-bold text-warning">120M+</h3>
+          <p class="text-secondary mb-0 fs-5">Seguidores</p>
+        </div>
       </div>
-    </div>
 
-    <!-- Youtube -->
-    <div class="col-md-4">
-      <div class="social-card">
-        <i class="bi bi-youtube icon"></i>
-        <h4 class="platform">Youtube</h4>
-        <p class="user">Neymar Jr</p>
-        <h3 class="numbers">5M+</h3>
-        <p class="label">Inscritos</p>
+      <div class="col-md-4">
+        <div class="card rounded-4 p-4 h-100 social-card-item hover-lift">
+          <i class="bi bi-twitch fs-2 mb-2" style="color:#9146ff;"></i>
+          <h5 class="fw-bold text-primary">Twitch</h5>
+          <p class="text-secondary mb-2">neymarjr</p>
+          <h3 class="fw-bold text-warning">2M+</h3>
+          <p class="text-secondary mb-0 fs-5">Seguidores</p>
+        </div>
       </div>
-    </div>
 
-    <!-- Facebook -->
-    <div class="col-md-4">
-      <div class="social-card">
-        <i class="bi bi-facebook icon"></i>
-        <h4 class="platform">Facebook</h4>
-        <p class="user">Neymar Jr</p>
-        <h3 class="numbers">120M+</h3>
-        <p class="label">Seguidores</p>
+      <div class="col-md-4">
+        <div class="card rounded-4 p-4 h-100 social-total hover-lift">
+          <i class="bi bi-graph-up-arrow fs-2 mb-2"></i>
+          <h5 class="fw-bold">Total global</h5>
+          <p class="mb-2 opacity-75">Todas as plataformas</p>
+          <h3 class="fw-bold">400M+</h3>
+          <p class="mb-0 fs-5 opacity-75">Seguidores combinados</p>
+        </div>
       </div>
-    </div>
 
-    <!-- Twitch -->
-    <div class="col-md-4">
-      <div class="social-card">
-        <i class="bi bi-twitch icon twitch"></i>
-        <h4 class="platform">Twitch</h4>
-        <p class="user">neymarjr</p>
-        <h3 class="numbers">2M+</h3>
-        <p class="label">Seguidores</p>
-      </div>
     </div>
-
-    <!-- Total -->
-    <div class="col-md-4">
-      <div class="social-card total">
-        <i class="bi bi-graph-up-arrow icon"></i>
-        <h4 class="platform">Total global</h4>
-        <p class="user">Todas as plataformas</p>
-        <h3 class="numbers">400M+</h3>
-        <p class="label">Seguidores combinados</p>
-      </div>
-    </div>
-
   </div>
 </section>
 
-   <footer class="bg-dark text-white pt-5 pb-3">
+<!-- ===== FOOTER ===== -->
+<footer class="pt-5 pb-3 footer-bg text-white">
   <div class="container">
-
-    <!-- LINHA PRINCIPAL -->
-    <div class="row">
-
-<!-- SUBSTITUA O <footer> ATUAL POR ESTE -->
-
-<footer class="pt-5 pb-3">
-  <div class="container">
-
     <div class="row g-5 align-items-start">
 
       <!-- PARCEIROS -->
       <div class="col-md-6">
-        <h5 class="text-center">Parceiros</h5>
-
-        <div class="d-flex flex-wrap justify-content-center gap-4 mt-3">
-
-          <div class="parceiro-item">
-            <img src="assets/puma.png" class="parceiro-logo" alt="Puma">
-            <span>Puma</span>
+        <h5 class="fw-bold text-uppercase mb-4 footer-heading">Parceiros</h5>
+        <div class="d-flex flex-wrap justify-content-center gap-4">
+          <div class="d-flex flex-column align-items-center gap-2">
+            <img src="assets/puma.png" class="parceiro-logo" alt="Puma" style="height:38px;">
+            <small class="text-white-50 text-uppercase">Puma</small>
           </div>
-
-          <div class="parceiro-item">
-            <img src="assets/redbull.png" class="parceiro-logo" alt="Red Bull">
-            <span>Red Bull</span>
+          <div class="d-flex flex-column align-items-center gap-2">
+            <img src="assets/redbull.png" class="parceiro-logo" alt="Red Bull" style="height:38px;">
+            <small class="text-white-50 text-uppercase">Red Bull</small>
           </div>
-
-          <div class="parceiro-item">
-            <img src="assets/mercado.png" class="parceiro-logo" alt="Mercado Livre">
-            <span>Mercado Livre</span>
+          <div class="d-flex flex-column align-items-center gap-2">
+            <img src="assets/mercado.png" class="parceiro-logo" alt="Mercado Livre" style="height:38px;">
+            <small class="text-white-50 text-uppercase">Mercado Livre</small>
           </div>
-
-          <div class="parceiro-item">
-            <img src="assets/blaze.png" class="parceiro-logo" alt="Blaze">
-            <span>Blaze</span>
+          <div class="d-flex flex-column align-items-center gap-2">
+            <img src="assets/blaze.png" class="parceiro-logo" alt="Blaze" style="height:38px;">
+            <small class="text-white-50 text-uppercase">Blaze</small>
           </div>
-
         </div>
       </div>
 
       <!-- FORMULÁRIO -->
       <div class="col-md-6">
-        <h5>Seja um parceiro</h5>
-
-        <form>
-          <div class="mb-3">
-            <input type="text" class="form-control" placeholder="Nome da empresa">
-          </div>
-          <div class="mb-3">
-            <input type="email" class="form-control" placeholder="Email corporativo">
-          </div>
-          <div class="mb-3">
-            <textarea class="form-control" rows="3" placeholder="Mensagem"></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary w-100">
-            Entrar em contato
-          </button>
-        </form>
+        <h5 class="fw-bold text-uppercase mb-4 footer-heading">Seja um parceiro</h5>
+        <div class="mb-3">
+          <input type="text" class="form-control footer-input" placeholder="Nome da empresa">
+        </div>
+        <div class="mb-3">
+          <input type="email" class="form-control footer-input" placeholder="Email corporativo">
+        </div>
+        <div class="mb-3">
+          <textarea class="form-control footer-input" rows="3" placeholder="Mensagem"></textarea>
+        </div>
+        <button class="btn btn-success w-100 rounded-3 fw-semibold">Entrar em contato</button>
       </div>
 
     </div>
 
-    <hr>
+    <hr class="border-secondary opacity-25 my-4">
 
-    <div class="text-center">
-      <p class="mb-0 text-secondary">
-        &copy; 2026 Mundo Ney. Todos os direitos reservados.
-      </p>
-    </div>
-
+    <p class="text-center text-white-50 small mb-0">&copy; 2026 Mundo Ney. Todos os direitos reservados.</p>
   </div>
 </footer>
 
-<!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
-
 <script>
-  // CURSOR PERSONALIZADO //
+  // ================= CURSOR =================
   const cursor = document.querySelector('.cursor');
-
-  document.addEventListener('mousemove', (e) => {
+  document.addEventListener('mousemove', e => {
     cursor.style.left = e.clientX + 'px';
-    cursor.style.top = e.clientY + 'px';
+    cursor.style.top  = e.clientY + 'px';
   });
+  document.addEventListener('mousedown', () => cursor.style.transform = 'translate(-50%,-50%) scale(1.3)');
+  document.addEventListener('mouseup',   () => cursor.style.transform = 'translate(-50%,-50%) scale(1)');
 
-  // efeito ao clicar
-  document.addEventListener('mousedown', () => {
-    cursor.style.transform = 'translate(-50%, -50%) scale(1.3)';
-  });
-
-  document.addEventListener('mouseup', () => {
-    cursor.style.transform = 'translate(-50%, -50%) scale(1)';
-  });
-
-  // Tema claro/escuro //
+  // ================= TEMA =================
   const toggleBtn = document.getElementById('themeToggle');
-  const icon = document.getElementById('themeIcon');
-  const body = document.body;
+  const icon      = document.getElementById('themeIcon');
 
   toggleBtn.addEventListener('click', () => {
-    body.classList.toggle('light-mode');
-    body.classList.toggle('dark-mode');
-
-    if (body.classList.contains('light-mode')) {
-      icon.classList.replace('bi-sun', 'bi-moon');
-    } else {
-      icon.classList.replace('bi-moon', 'bi-sun');
-    }
+    document.body.classList.toggle('light-mode');
+    document.body.classList.toggle('dark-mode');
+    icon.classList.toggle('bi-sun');
+    icon.classList.toggle('bi-moon');
   });
+
+  // ================= NAV SCROLL SUAVE + ACTIVE =================
+  const navLinks = document.querySelectorAll('.nav-link[href^="#"]');
+  const sections = [];
+
+  navLinks.forEach(link => {
+    const target = document.querySelector(link.getAttribute('href'));
+    if (target) sections.push({ link, target });
+
+    link.addEventListener('click', e => {
+      e.preventDefault();
+      const dest = document.querySelector(link.getAttribute('href'));
+      if (dest) {
+        dest.scrollIntoView({ behavior: 'smooth' });
+        // fecha menu mobile se aberto
+        const collapse = document.querySelector('#menu');
+        if (collapse.classList.contains('show')) {
+          new bootstrap.Collapse(collapse).hide();
+        }
+      }
+    });
+  });
+
+  // Marca link ativo conforme a seção visível
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      const match = sections.find(s => s.target === entry.target);
+      if (match) {
+        if (entry.isIntersecting) {
+          navLinks.forEach(l => l.classList.remove('active-link'));
+          match.link.classList.add('active-link');
+        }
+      }
+    });
+  }, { threshold: 0.35 });
+
+  sections.forEach(s => observer.observe(s.target));
 </script>
 
 </body>
