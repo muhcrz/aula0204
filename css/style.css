@@ -42,7 +42,47 @@
     body {
     background: var(--bg-main);
     color: var(--text-main);
+    cursor: none !important;
     }
+    
+    .cursor {
+  width: 32px;
+  height: 32px;
+
+    background: url('../assets/logoney.png');
+  background-size: cover;
+  background-position: center;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: transform 0.05s ease;
+
+  z-index: 999999;
+}
+
+/* remove cursor padrão de TUDO */
+*,
+*::before,
+*::after {
+  cursor: none !important;
+}
+
+/* garante também nos estados de interação */
+a, button, input, textarea, select {
+  cursor: none !important;
+}
+
+a:hover, button:hover {
+  cursor: none !important;
+}
+
+a:active, button:active {
+  cursor: none !important;
+}
 
     /* HEADER */
     .header-custom {
