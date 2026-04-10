@@ -603,13 +603,17 @@
           <input type="text" class="form-control footer-input" placeholder="Nome da empresa">
         </div>
         <div class="mb-3">
-          <input type="email" class="form-control footer-input" placeholder="Email corporativo">
-        </div>
+          <input id="emailInput" type="email" class="form-control footer-input" placeholder="Email corporativo">
         <div class="mb-3">
           <textarea class="form-control footer-input" rows="3" placeholder="Mensagem"></textarea>
         </div>
-        <button class="btn btn-success w-100 rounded-3 fw-semibold">Entrar em contato</button>
-      </div>
+        <button id="btnEnviar" class="btn btn-success w-100 rounded-3 fw-semibold">
+          Entrar em contato
+        </button>
+
+        <div id="alertaSucesso" class="alert alert-success mt-3 text-center d-none" role="alert">
+        Mensagem enviada com sucesso!
+        </div>
 
     </div>
 
@@ -677,6 +681,28 @@
   }, { threshold: 0.35 });
 
   sections.forEach(s => observer.observe(s.target));
+
+// ================= FORMULÁRIO =================
+const btnEnviar = document.getElementById('btnEnviar');
+const alerta = document.getElementById('alertaSucesso');
+const emailInput = document.getElementById('emailInput');
+
+btnEnviar.addEventListener('click', () => {
+  const email = emailInput.value;
+
+  // validação simples
+  if (!email.includes('@') || email.trim() === '') {
+    alert('❌ Digite um email válido com @');
+    return;
+  }
+
+  // sucesso
+  alerta.classList.remove('d-none');
+
+  setTimeout(() => {
+    alerta.classList.add('d-none');
+  }, 3000);
+});
 </script>
 
 </body>

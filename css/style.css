@@ -216,6 +216,18 @@ body.light-mode .stats-bg {
   background: linear-gradient(45deg, #f9fd50, #00bd56);
 }
 
+/* ================= ESTATÍSTICAS - TEXTO BRANCO NO LIGHT MODE ================= */
+body.light-mode #estatisticas h2,
+body.light-mode #estatisticas h3,
+body.light-mode #estatisticas p {
+  color: #ffffff !important;
+}
+
+/* deixa o texto secundário mais visível */
+body.light-mode #estatisticas .opacity-75 {
+  color: rgba(255, 255, 255, 0.85) !important;
+}
+
 /* ================= LINHA DO TEMPO ================= */
 body.dark-mode .timeline-bg {
   background: linear-gradient(160deg, #0a1a40, #0f172a);
@@ -427,6 +439,7 @@ body.light-mode .footer-input::placeholder {
   height: 200px;
   object-fit: cover;
 }
+
 
 /* ================= RESPONSIVO ================= */
 @media (max-width: 768px) {
